@@ -213,4 +213,31 @@ df = pd.read_csv('data.csv')
 df.to_csv('output.csv', index=False)
 ```
 
-These examples demonstrate basic file operations and how to use Pandas to manipulate data and perform I/O operations with CSV files.
+## cntrl c + cntrl v this : 
+
+### clear console : 
+
+```
+import os
+def clearScreen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+```
+
+### enum and shit : 
+```
+from enum import Enum
+
+class Selection(Enum):
+    ADD = 1
+    DELETE = 2
+    SHOW = 3
+    SEARCH = 4
+    CLEAR = 5
+    EDIT = 6
+    EXIT = 7
+
+def menu():
+    for item in Selection:print(f'{item.value} - {item.name}')
+    return   Selection(int( input("your selection: ")))
+```
+
