@@ -241,3 +241,8 @@ def menu():
     return   Selection(int( input("your selection: ")))
 ```
 
+### start the program with this : 
+```
+if __name__ == '__main__':
+    main()
+```
