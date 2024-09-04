@@ -251,9 +251,19 @@
 - **SQL Aggregate Functions**: Functions like `COUNT` and `AVG` for summarizing data.
 - **Inner Join**: SQL command to combine tables.
 
-## Summary
+- **Virtual Environment and Requirements**: Use virtual environments for project-specific dependencies and requirements.txt for listing them.
 
-This cheat sheet provides an overview of basic Python concepts, file handling, data management, and database operations. It covers key lessons and highlights essential tools and best practices for Python programming.
+```bash
+# Create and activate virtual environment
+python -m venv myenv
+source myenv/bin/activate  # On Windows: myenv\Scripts\activate
+
+# Create requirements.txt
+pip freeze > requirements.txt
+
+# Install from requirements.txt
+pip install -r requirements.txt
+```
 
 ## cntrl c + cntrl v this : 
 
